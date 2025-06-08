@@ -6,7 +6,7 @@ El objetivo principal es construir una aplicación web que incluya una landing p
 
 ## Versión actual
 
-**Hola Mundo** inicial desplegado exitosamente.
+**Hola Mundo** inicial desplegado exitosamente en Vercel.
 
 🔗 **Sitio en línea:**  
 [https://franmari-dev.vercel.app](https://franmari-dev.vercel.app)
