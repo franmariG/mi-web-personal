@@ -1,12 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Franmari DEV</title>
-</head>
-<body>
-  <h1>Hola Mundo</h1>
-  <p>Este será mi sitio web personal. Próximamente más contenido.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franmari DEV | Web Personal</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">Franmari DEV</div>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobremi">Sobre Mí</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+      <h1>¡Hola! Soy Franmari</h1>
+      <p>
+        Desarrolladora en formación explorando el desarrollo web, Python e
+        inteligencia artificial.
+      </p>
+      <a href="#portafolio" class="btn">Ver Proyectos</a>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobremi" class="about">
+      <h2>Sobre Mí</h2>
+      <p>
+        Estudiante de Ingeniería en Informática, aprendiendo HTML, CSS,
+        JavaScript, Python, Git y Figma. Me interesa crear soluciones
+        funcionales, limpias y accesibles.
+      </p>
+
+      <div class="skills">
+        <h3>Habilidades Técnicas</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (básico)</li>
+          <li>Python (básico)</li>
+          <li>Git / GitHub</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+
+      <div class="values">
+        <h3>Valores Personales</h3>
+        <ul>
+          <li>Curiosidad constante</li>
+          <li>Ganas de aprender</li>
+          <li>Constancia</li>
+          <li>Responsabilidad</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="services">
+      <h2>Servicios</h2>
+      <div class="service-cards">
+        <div class="card">Diseño y Maquetación Web</div>
+        <div class="card">Diseño Responsive</div>
+        <div class="card">Prototipos en Figma</div>
+        <div class="card">Edición de Sitios</div>
+        <div class="card">Integración con GitHub</div>
+        <div class="card">Automatización básica con Python</div>
+      </div>
+
+      <h3>Proceso de trabajo</h3>
+      <ol>
+        <li>Conversación inicial</li>
+        <li>Propuesta visual</li>
+        <li>Desarrollo</li>
+        <li>Revisión</li>
+        <li>Entrega final</li>
+      </ol>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section id="portafolio" class="portfolio">
+      <h2>Portafolio</h2>
+      <!-- Aquí irán las tarjetas de tus proyectos -->
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo" required />
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="redes">
+        <a href="https://github.com/tuusuario" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a>
+        <a href="mailto:tucorreo@gmail.com">Email</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        © 2025 Franmari DEV. Todos los derechos reservados. Gracias por visitar
+        mi portafolio.
+      </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
 </html>
