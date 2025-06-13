@@ -1,0 +1,50 @@
+/* BOTONES GENERALES */
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  font-family: var(--fuente-principal);
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--color-boton-primario);
+  color: var(--color-blanco);
+}
+
+.btn-primary:hover {
+  background-color: #420073;
+  transform: translateY(-3px);
+}
+
+.btn-primary:active {
+  transform: translateY(0px);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background-color: var(--color-blanco);
+  border: 2px solid var(--color-primario);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.item:hover {
+  background-color: var(--color-secundario);
+  transform: translateY(-3px);
+}
+
+.item img {
+  height: 24px;
+  width: 24px;
+}

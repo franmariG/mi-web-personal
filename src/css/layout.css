@@ -1,0 +1,285 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-fondo);
+  font-family: var(--fuente-principal);
+  color: var(--color-negro);
+  gap: 3rem;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  background-color: var(--color-blanco);
+}
+
+.logo {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--color-negro);
+  padding: 0rem 1.3rem;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0.6rem 2.3rem;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.menu-toggle {
+  display: none;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+
+/* HERO */
+
+.hero-container {
+  background-color: var(--color-blanco);
+  border-radius: 130px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-info {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-buttons {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  max-width: 322px;
+  border-radius: 40%;
+  padding: 0.6rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.hero-info p {
+  font-size: 1.3rem;
+}
+
+/* SOBRE MÍ */
+
+.about-container {
+  background-color: var(--color-blanco);
+  padding: 1.2rem 2.4rem;
+}
+
+.about-boxes {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1;
+  background-color: var(--color-secundario);
+  padding: 1.8rem;
+  border-radius: 31px;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.box h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.box li {
+  line-height: 3rem; /* Establece el interlineado a 1.5 veces el tamaño de la fuente */
+  margin-left: 1.8rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem 2.8rem;
+  justify-content: center;
+  padding: 0.8rem 1.8rem;
+}
+
+/* SERVICIOS */
+
+.servicios {
+  margin-bottom: 2rem;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.service-cards .card {
+  background-color: var(--color-blanco);
+  padding: var(--espaciado);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 250px;
+}
+
+/* Proceso de trabajo y modalidades */
+
+.workflow {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.workflow .box {
+  background-color: var(--color-blanco);
+  padding: 1rem;
+  border-radius: 10px;
+  flex: 1 1 250px;
+}
+
+/* PORTAFOLIO */
+
+.portafolio {
+  margin-bottom: 2rem;
+}
+
+.portfolio-filters {
+  margin-bottom: 1rem;
+}
+
+.portfolio-filters button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--color-boton-primario);
+  color: var(--color-blanco);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-card {
+  background-color: var(--color-blanco);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 250px;
+}
+
+/* CONTACTO */
+
+.contacto form {
+  background-color: var(--color-blanco);
+  padding: var(--espaciado);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.contacto input,
+.contacto textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contacto button {
+  background-color: var(--color-boton-primario);
+  color: var(--color-blanco);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contacto button:hover {
+  background-color: #8f4ae6;
+}
+
+/* REDES */
+
+.redes-sociales {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.redes-sociales a {
+  text-decoration: none;
+  color: var(--color-boton-primario);
+  font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive */
+
+@media (max-width: 940px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-blanco);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links.active {
+  display: flex !important;
+}
+
+.hero-image {
+  max-width: 290px;
+  border-radius: 40%;
+  padding: 0.6rem;
+}
+
+}
