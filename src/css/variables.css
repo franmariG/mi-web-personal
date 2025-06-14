@@ -1,0 +1,16 @@
+:root {
+  /* Paleta basada en tu diseño */
+  --color-primario: #a965ff;
+  --color-secundario: #fBF3FF;
+  --color-fondo: #f4e7ff;
+  --color-blanco: #ffffff;
+  --color-negro: #222222;
+
+  --color-boton-primario: #8A06EA;
+
+  /* Tipografía */
+  --fuente-principal: 'Open Sans', sans-serif;
+
+  /* Ancho general */
+  --ancho-maximo: 1200px;
+}

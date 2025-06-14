@@ -1,0 +1,285 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-fondo);
+  font-family: var(--fuente-principal);
+  color: var(--color-negro);
+  gap: 3rem;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  background-color: var(--color-blanco);
+}
+
+.logo {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--color-negro);
+  padding: 0rem 1.3rem;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0.6rem 2.3rem;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.menu-toggle {
+  display: none;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero-container {
+  background-color: var(--color-blanco);
+  border-radius: 130px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-info {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-buttons {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  max-width: 322px;
+  border-radius: 40%;
+  padding: 0.6rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.hero-info p {
+  font-size: 1.3rem;
+}
+
+/* SOBRE MÍ */
+
+.about-container {
+  background-color: var(--color-blanco);
+  padding: 1.2rem 2.4rem;
+}
+
+.about-boxes {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1;
+  background-color: var(--color-secundario);
+  padding: 1.8rem;
+  border-radius: 31px;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+h3 {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.box li {
+  line-height: 3rem;
+  margin-left: 1.8rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem 2.8rem;
+  justify-content: center;
+  padding: 0.8rem 1.8rem;
+}
+
+/* SERVICIOS */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  margin-top: 1.3rem;
+  padding: 0.6rem;
+  gap: 4.3rem;
+}
+
+.cards-container p {
+  font-size: 0.7rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+/* Proceso de trabajo y modalidades */
+
+.workflow {
+  display: flex;
+  gap: 4.3rem;
+  flex-wrap: wrap;
+  background-color: var(--color-blanco);
+  padding: 1.2rem 9rem;
+}
+
+/* PORTAFOLIO */
+
+.title-and-filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 3rem;
+  gap: 3rem;
+}
+
+.portfolio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.3rem;
+  padding: 0 1.2rem;
+}
+
+.portfolio-cards {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1.3rem;
+  scroll-snap-type: x mandatory;
+}
+
+/* CONTACTO */
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-blanco);
+  padding: 1.7rem;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-contact {
+  max-width: 47.5rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+.input-container,
+.msj-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto p {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.contact-button {
+  margin: auto;
+}
+
+/* REDES */
+
+.social-networks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+
+  padding: 2.1rem;
+  background-color: var(--color-blanco);
+}
+
+/* Responsive */
+
+@media (max-width: 940px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-blanco);
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links.active {
+    display: flex !important;
+  }
+
+  .hero-image {
+    max-width: 290px;
+    border-radius: 40%;
+    padding: 0.6rem;
+  }
+
+  .workflow {
+    padding: 1.2rem 1.5rem;
+  }
+}
