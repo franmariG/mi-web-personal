@@ -54,6 +54,13 @@
   transform: translateY(0px);
 }
 
+.btn.active {
+  background-color: var(--color-secundario);
+  color: var(--color-negro);
+  border: 2px solid var(--color-primario);
+  transition: 0.3s;
+}
+
 .item {
   display: flex;
   align-items: center;

@@ -16,10 +16,10 @@
 </head>
 
 <body>
-  
+
   <div id="preloader">
-  <div class="loader"></div>
-</div>
+    <div class="loader"></div>
+  </div>
 
   <!-- NAVBAR -->
   <header class="navbar">
@@ -27,15 +27,12 @@
       <span>Franmari DEV</span>
       <img src="assets/icons/dev.svg" />
     </div>
-
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#inicio" class="btn btn-primary">Inicio</a></li>
-        <li><a href="#sobremi" class="btn btn-primary">Sobre mí</a></li>
-        <li><a href="#servicios" class="btn btn-primary">Servicios</a></li>
-        <li><a href="#portafolio" class="btn btn-primary">Portafolio</a></li>
-        <li><a href="#contacto" class="btn btn-primary">Contacto</a></li>
-      </ul>
+    <nav class="nav-links" id="nav-links">
+      <a href="#inicio" class="btn btn-primary">Inicio</a>
+      <a href="#sobremi" class="btn btn-primary">Sobre mí</a>
+      <a href="#servicios" class="btn btn-primary">Servicios</a>
+      <a href="#portafolio" class="btn btn-primary">Portafolio</a>
+      <a href="#contacto" class="btn btn-primary">Contacto</a>
     </nav>
 
     <img src="assets/icons/menu.svg" class="menu-toggle" id="menu-toggle" alt="menu" />
@@ -241,7 +238,7 @@
             <div class="form-info">
               <div class="input-container">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="Escribe tu nombre" required/>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" required />
 
                 <label for="correo">Correo</label>
                 <input type="email" id="correo" placeholder="Escribe tu correo" required />
@@ -251,14 +248,14 @@
                 <label for="mensaje">Mensaje</label>
                 <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
               </div>
-              
+
               <!-- Modal -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <p id="modal-text"></p>
-    <button id="modal-close" class="btn btn-primary">Cerrar</button>
-  </div>
-</div>
+              <div id="modal" class="modal">
+                <div class="modal-content">
+                  <p id="modal-text"></p>
+                  <button id="modal-close" class="btn btn-primary">Cerrar</button>
+                </div>
+              </div>
 
 
             </div>
