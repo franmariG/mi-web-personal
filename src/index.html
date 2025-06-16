@@ -16,21 +16,23 @@
 </head>
 
 <body>
+
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="logo">
       <span>Franmari DEV</span>
       <img src="assets/icons/dev.svg" />
     </div>
-
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#inicio" class="btn btn-primary">Inicio</a></li>
-        <li><a href="#sobremi" class="btn btn-primary">Sobre mí</a></li>
-        <li><a href="#servicios" class="btn btn-primary">Servicios</a></li>
-        <li><a href="#portafolio" class="btn btn-primary">Portafolio</a></li>
-        <li><a href="#contacto" class="btn btn-primary">Contacto</a></li>
-      </ul>
+    <nav class="nav-links" id="nav-links">
+      <a href="#inicio" class="btn btn-primary">Inicio</a>
+      <a href="#sobremi" class="btn btn-primary">Sobre mí</a>
+      <a href="#servicios" class="btn btn-primary">Servicios</a>
+      <a href="#portafolio" class="btn btn-primary">Portafolio</a>
+      <a href="#contacto" class="btn btn-primary">Contacto</a>
     </nav>
 
     <img src="assets/icons/menu.svg" class="menu-toggle" id="menu-toggle" alt="menu" />
@@ -231,7 +233,7 @@
       <div class="box box-contact">
         <h3>CONTACTO</h3>
         <p>¿Quieres contactarme? Estoy disponible para colaboraciones e ideas </p>
-        <form>
+        <form id="contact-form">
           <div class="form-container">
             <div class="form-info">
               <div class="input-container">
@@ -247,6 +249,14 @@
                 <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
               </div>
 
+              <!-- Modal -->
+              <div id="modal" class="modal">
+                <div class="modal-content">
+                  <p id="modal-text"></p>
+                  <button id="modal-close" class="btn btn-primary">Cerrar</button>
+                </div>
+              </div>
+
 
             </div>
             <div class="contact-button">
@@ -260,7 +270,7 @@
         <h3>REDES SOCIALES</h3>
         <p>Encuéntrame también en:</p>
         <div class="social-networks">
-          <a href="https://www.linkedin.com/" target="_blank" class="item">
+          <a href="https://www.linkedin.com/in/franmari-garcia-83b96b36b" target="_blank" class="item">
             <img src="assets/icons/linkedin.svg" alt="LinkedIn">
             <span>LinkedIn</span>
           </a>
