@@ -2,11 +2,13 @@
 
 Este es el repositorio de mi sitio web personal, desarrollado como parte de un proyecto académico para la materia de Desarrollo Web.
 
-El objetivo principal es construir una aplicación web que incluya una landing page profesional, una sección sobre mí, servicios, portafolio conectado a base de datos, formulario de contacto y un chatbot opcional.
+El objetivo principal es construir una aplicación web que incluya una landing page profesional, una sección sobre mí, servicios, portafolio conectado a base de datos, y un formulario de contacto.
 
 ## Versión actual
 
-**Hola Mundo** inicial desplegado exitosamente en Vercel.
+La parte de frontend ya está implementada, incluyendo la landing page, sección sobre mí, servicios, portafolio y formulario de contacto.
+
+Sin embargo, aún falta implementar el backend para conectar y manejar la lógica del portafolio, formulario, etc.
 
 🔗 **Sitio en línea:**  
 [https://franmari-dev.vercel.app](https://franmari-dev.vercel.app)
