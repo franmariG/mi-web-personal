@@ -1,3 +1,30 @@
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-fondo);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid var(--color-primario);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* BOTONES GENERALES */
 
 .btn {
@@ -35,7 +62,7 @@
   background-color: var(--color-blanco);
   border: 2px solid var(--color-primario);
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
 }
 
@@ -55,7 +82,7 @@
   background-color: var(--color-blanco);
   border: 2px solid var(--color-primario);
   border-radius: 4px;
-  box-shadow: 7px 7px 3px rgba(0,0,0,0.3);
+  box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.3);
   padding: 0.6rem;
   text-align: left;
   transition: 0.3s ease;
@@ -66,7 +93,7 @@
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 4px 4px 3px rgba(0,0,0,0.2);
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -116,4 +143,30 @@ textarea:focus {
 .social-networks .item {
   text-decoration: none;
   color: var(--color-negro);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: var(--color-blanco);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.modal-content p {
+  margin-bottom: 1rem;
 }

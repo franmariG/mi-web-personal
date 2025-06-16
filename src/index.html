@@ -16,6 +16,11 @@
 </head>
 
 <body>
+  
+  <div id="preloader">
+  <div class="loader"></div>
+</div>
+
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="logo">
@@ -231,12 +236,12 @@
       <div class="box box-contact">
         <h3>CONTACTO</h3>
         <p>¿Quieres contactarme? Estoy disponible para colaboraciones e ideas </p>
-        <form>
+        <form id="contact-form">
           <div class="form-container">
             <div class="form-info">
               <div class="input-container">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="Escribe tu nombre" required />
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" required/>
 
                 <label for="correo">Correo</label>
                 <input type="email" id="correo" placeholder="Escribe tu correo" required />
@@ -246,6 +251,14 @@
                 <label for="mensaje">Mensaje</label>
                 <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
               </div>
+              
+              <!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <p id="modal-text"></p>
+    <button id="modal-close" class="btn btn-primary">Cerrar</button>
+  </div>
+</div>
 
 
             </div>
@@ -260,7 +273,7 @@
         <h3>REDES SOCIALES</h3>
         <p>Encuéntrame también en:</p>
         <div class="social-networks">
-          <a href="https://www.linkedin.com/" target="_blank" class="item">
+          <a href="https://www.linkedin.com/in/franmari-garcia-83b96b36b" target="_blank" class="item">
             <img src="assets/icons/linkedin.svg" alt="LinkedIn">
             <span>LinkedIn</span>
           </a>
