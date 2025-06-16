@@ -118,6 +118,11 @@ h3 {
   margin-bottom: 1.2rem;
 }
 
+.level {
+  text-align: center;
+  font-weight: bold; 
+}
+
 .box li {
   line-height: 3rem;
   margin-left: 1.8rem;
