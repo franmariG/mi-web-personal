@@ -4,7 +4,20 @@ const modalText = document.getElementById('modal-text');
 const modalClose = document.getElementById('modal-close');
 const filterButtons = document.querySelectorAll('.portfolio-filters button');
 
-form.addEventListener('submit', function (e) {
+// form.addEventListener('submit', function (e) {
+//   e.preventDefault();
+
+//   if (!form.checkValidity()) {
+//     mostrarModal('Por favor completa correctamente todos los campos.');
+//     return;
+//   }
+
+//   mostrarModal('Mensaje enviado correctamente.');
+
+//   form.reset();
+// });
+
+form.addEventListener('submit', async function (e) {
   e.preventDefault();
 
   if (!form.checkValidity()) {
@@ -12,9 +25,29 @@ form.addEventListener('submit', function (e) {
     return;
   }
 
-  mostrarModal('Mensaje enviado correctamente.');
+  const formData = {
+    name: document.getElementById('nombre').value,
+    email: document.getElementById('correo').value,
+    content: document.getElementById('mensaje').value
+  };
 
-  form.reset();
+  try {
+    const response = await fetch('http://localhost:4000/api/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+
+    if (response.ok) {
+      mostrarModal('Mensaje enviado correctamente.');
+      form.reset();
+    } else {
+      mostrarModal('Error al enviar el mensaje.');
+    }
+  } catch (error) {
+    console.error(error);
+    mostrarModal('Error al enviar el mensaje.');
+  }
 });
 
 function mostrarModal(texto) {
