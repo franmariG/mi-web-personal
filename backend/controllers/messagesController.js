@@ -26,10 +26,10 @@ exports.createMessage = async (req, res) => {
     });
 
     await transporter.sendMail({
-      from: `"Web Contact" <${process.env.MAIL_USER}>`,
+      from: `"Web Personal Contacto" <${process.env.MAIL_USER}>`,
       to: process.env.MAIL_TO,
-      subject: 'New contact message',
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${content}`
+      subject: 'Nuevo mensaje de contacto',
+      text: `Has recibido un nuevo mensaje de contacto: \n\nNombre: ${name}\nCorreo: ${email}\nMensaje: ${content}`
     });
 
     res.status(200).json({ message: 'Message saved and email sent' });

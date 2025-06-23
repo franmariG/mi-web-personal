@@ -176,57 +176,19 @@
   </section>
 
   <!-- PORTAFOLIO -->
-  <section id="portafolio" class="portafolio">
-    <div class="title-and-filters-container">
-      <h2>Portafolio</h2>
-
-      <div class="portfolio-filters">
-        <button class="btn btn-primary" data-filter="all">Todos</button>
-        <button class="btn btn-primary" data-filter="web">Web</button>
-        <button class="btn btn-primary" data-filter="python">Python</button>
-        <button class="btn btn-primary" data-filter="ia">IA</button>
-      </div>
+   <section id="portafolio" class="portafolio">
+  <div class="title-and-filters-container">
+    <h2>Portafolio</h2>
+    <div class="portfolio-filters">
+      <!-- Los botones se generarán dinámicamente -->
     </div>
+  </div>
 
-    <div class="cards-container">
-      <div class="card" data-category="python">
-        <h4>Batalla Naval multijugador con sockets</h4>
-        <img src="assets/images/batalla-naval.png" alt="Batalla Naval">
-        <p>Juego de Batalla Naval por turnos, con servidor central que gestiona múltiples jugadores usando sockets TCP y
-          multihilos.</p>
-        <p><strong>Tecnologías</strong>: Python, multithreading, sockets</p>
-        <div class="card-button"><button class="btn btn-primary">Ver más</button></div>
-      </div>
+  <div class="cards-container">
+    <!-- Las cards se generarán dinámicamente -->
+  </div>
+</section>
 
-      <div class="card" data-category="web">
-        <h4>Tienda de Camisetas Personalizadas</h4>
-        <img src="assets/images/tienda-camisetas.png" alt="Tienda">
-        <p>Sitio web de práctica de tienda online de camisetas con diseños originales. El objetivo fue trabajar diseño
-          visual, estructura de ecommerce básica y organización clara del contenido.</p>
-        <p><strong>Tecnologías</strong>: HTML, CSS</p>
-        <div class="card-button"><button class="btn btn-primary">Ver más</button></div>
-      </div>
-
-      <div class="card" data-category="python">
-        <h4>Puzzle 8 con búsqueda informada y no informada</h4>
-        <img src="assets/images/puzzle.png" alt="Puzzle 8">
-        <p>Juego clásico resuelto mediante dos agentes: uno con Búsqueda en Amplitud (BFS) y otro con A* (heurística de
-          Manhattan).</p>
-        <p><strong>Tecnologías</strong>: Python, algoritmos de búsqueda, Pygame</p>
-        <div class="card-button"><button class="btn btn-primary">Ver más</button></div>
-
-      </div>
-
-      <div class="card" data-category="ia">
-        <h4>Página de Venta de Audífonos Modernos</h4>
-        <img src="assets/images/audifonos.png" alt="Audífonos">
-        <p>Diseño de una página moderna que promociona audífonos. Se trabajó también una interacción básica con
-          JavaScript para simular comportamiento dinámico.</p>
-        <p><strong>Tecnologías</strong>: HTML, CSS, Javascript</p>
-        <div class="card-button"><button class="btn btn-primary">Ver más</button></div>
-      </div>
-    </div>
-  </section>
 
   <!-- CONTACTO -->
   <section id="contacto" class="contacto">
@@ -239,32 +201,30 @@
             <div class="form-info">
               <div class="input-container">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="name" placeholder="Escribe tu nombre" required />
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" required />
 
                 <label for="correo">Correo</label>
-                <input type="email" id="correo" name="email" placeholder="Escribe tu correo" required />
+                <input type="email" id="correo" placeholder="Escribe tu correo" required />
               </div>
 
               <div class="msj-container">
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="content" placeholder="Escribe tu mensaje" required></textarea>
+                <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
               </div>
-
-              <!-- Modal -->
-              <div id="modal" class="modal">
-                <div class="modal-content">
-                  <p id="modal-text"></p>
-                  <button id="modal-close" class="btn btn-primary">Cerrar</button>
-                </div>
-              </div>
-
-
             </div>
             <div class="contact-button">
               <button class="btn btn-primary" type="submit">Enviar</button>
             </div>
           </div>
         </form>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <p id="modal-text"></p>
+            <button id="modal-close" class="btn btn-primary" type="button">Cerrar</button>
+          </div>
+        </div>
 
       </div>
       <div class="box box-social-networks">
