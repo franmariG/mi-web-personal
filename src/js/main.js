@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const categories = new Set();
     projects.forEach(p => p.categories.forEach(c => categories.add(c)));
 
-    filtersContainer.innerHTML = `<button class="btn btn-primary" data-filter="all">Todos</button>`;
+    filtersContainer.innerHTML = `<button class="btn btn-primary active" data-filter="all">Todos</button>`;
     categories.forEach(cat => {
       filtersContainer.innerHTML += `<button class="btn btn-primary" data-filter="${cat}">${cat}</button>`;
     });
@@ -95,16 +95,23 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     renderProjects("all");
 
-    // Filtrado
+    // Filtrado con botón activo
     filtersContainer.addEventListener("click", (e) => {
       if (e.target.tagName === "BUTTON") {
+        // Quitar la clase activa de todos los botones
+        filtersContainer.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
+
+        // Agregar clase activa al botón seleccionado
+        e.target.classList.add('active');
+
+        // Filtrar proyectos
         const filtro = e.target.dataset.filter;
         renderProjects(filtro);
       }
     });
 
+
   } catch (err) {
     console.error("Error cargando proyectos", err);
   }
 });
-
