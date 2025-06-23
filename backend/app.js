@@ -12,6 +12,10 @@ const projectRoutes = require('./routes/projects');
 app.use('/api/messages', messageRoutes);
 app.use('/api/projects', projectRoutes);
 
+app.get('/', (req, res) => {
+  res.send('Bienvenido al backend de Franmari DEV');
+});
+
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en el puerto ${PORT}`);
