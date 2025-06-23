@@ -3,9 +3,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   const modal = document.getElementById('modal');
   const modalText = document.getElementById('modal-text');
   const modalClose = document.getElementById('modal-close');
-
   const filtersContainer = document.querySelector('.portfolio-filters');
-  const cardsContainer = document.querySelector('.cards-container');
+  const cardsContainer = document.getElementById('portfolio-cards-container');
 
   // Modal
   function mostrarModal(texto) {
