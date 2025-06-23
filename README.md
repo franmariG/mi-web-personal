@@ -22,7 +22,7 @@ El objetivo principal es construir una aplicación web completa que incluya:
 ## Estructura del proyecto
 
 ```bash
-mi-web-personal
+mi-web-personal/
 ├── backend/ # Código del servidor Node.js y API REST
 │  ├── controllers/ # Lógica para manejar proyectos y mensajes
 │  │  ├── messagesController.js
